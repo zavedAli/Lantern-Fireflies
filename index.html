@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Aishika Das — UI/UX Designer & AI-Assisted Product Designer</title>
+
+  <meta name="description"
+    content="Portfolio of Aishika Das — UI/UX Designer, Prompt Engineer, and AI-Assisted Product Designer. Specializing in enterprise dashboards, healthcare interfaces, Material Design 3, and research prompt architecture.">
+  <meta name="author" content="Aishika Das">
+
+  <!-- Ethereal Thin Fonts: Cormorant Garamond (Hairline Serif) + Outfit (Thin Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400;500&family=Yantramanav:wght@200;300;400&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon with Asian Seal Accent -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233368A0'/><circle cx='50' cy='50' r='38' stroke='%23C8DFDB' stroke-width='2.5' stroke-dasharray='6 3' fill='none'/><text x='50%' y='57%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='300' font-size='44' fill='%23FFFFFF'>AD</text></svg>">
+</head>
+
+<body>
+
+  <!-- Ambient Diffused Glowing Orbs (Glassmorphism Backdrop) -->
+  <div class="glass-ambient-container" aria-hidden="true">
+    <div class="glass-orb orb-1"></div>
+    <div class="glass-orb orb-2"></div>
+    <div class="glass-orb orb-3"></div>
+  </div>
+
+  <!-- Dynamic Roaming Interactive Fireflies Canvas (Dark Mode) -->
+  <canvas id="firefliesCanvas" aria-hidden="true"></canvas>
+
+  <!-- Subtle Minimal Mandala Tapestry Background -->
+  <div class="mandala-bg-tapestry" aria-hidden="true"></div>
+
+  <!-- Navigation Bar (Solid Opaque, Zero Transparency) -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-badge" aria-label="Aishika Das Home">
+        <div class="brand-icon">AD</div>
+        <div>
+          <span class="brand-name">Aishika Das</span>
+          <span class="brand-sub">UI/UX Designer</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#work" class="nav-link">Selected Work</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#design-system" class="nav-link">Design Tokens</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Asian Taegeuk / Balance Swirl Theme Switcher -->
+        <!-- <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle theme mode" title="Toggle Theme (Light / Dark)">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 3a9 9 0 0 1 0 18c-2.5 0-4.5-2-4.5-4.5S9.5 12 12 12s4.5-2 4.5-4.5S14.5 3 12 3z" fill="currentColor" fill-opacity="0.25"/>
+              <circle cx="12" cy="7.5" r="1.5" fill="currentColor"/>
+              <circle cx="12" cy="16.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </span>
+        </button> -->
+        <a href="#contact" class="btn btn-primary btn-sm nav-contact-btn">
+          <span>Get in Touch</span>
+          <span class="asian-icon" style="width:14px;height:14px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H9M17 7V15" />
+            </svg>
+          </span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close" style="display:none;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Atmospheric Lanterns & Asian Aesthetics -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-intro">
+        <div class="hero-badges-row">
+          <span class="badge-glass badge-status">
+            <span class="status-pulse-dot"></span> Available for UI/UX & Product Design Roles
+          </span>
+          <span class="badge-glass">
+            <span class="asian-icon" style="width:14px;height:14px;color:var(--c-deep-blue);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2L4 7h16L12 2zM6 7v6M18 7v6M3 13h18M5 13v7M19 13v7M2 20h20" />
+              </svg>
+            </span>
+            Kolkata, India
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-highlight">Aishika Das</span>
+        </h1>
+
+        <div class="hero-roles">
+          <span class="role-item">UI/UX Designer</span>
+          <span class="role-dot">❖</span>
+          <span class="role-item">Prompt Engineer</span>
+          <span class="role-dot">❖</span>
+          <span class="role-item">AI-Assisted Product Designer</span>
+        </div>
+
+        <p class="hero-bio">
+          Designing scalable enterprise SaaS interfaces, clinical healthcare systems, and tokenized design systems in
+          Figma. At <strong>Habot Connect DMCC</strong>, I blend deep user research with Google Gemini and NotebookLM
+          prompt engineering to transition complex business workflows into high-velocity data flows.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#work" class="btn btn-primary">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 3c1.5 3 4 5.5 4 8.5 0 2.5-1.8 4.5-4 4.5s-4-2-4-4.5C8 8.5 10.5 6 12 3z" />
+                <path d="M12 16c-3 0-6.5-1.5-8-4 1.5 4 5 7 8 7s6.5-3 8-7c-1.5 2.5-5 4-8 4z" />
+              </svg>
+            </span>
+            Explore Case Studies
+          </a>
+          <a href="#experience" class="btn btn-glass">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM8 2v4M16 2v4M3 10h18M8 14h8M8 17h5" />
+              </svg>
+            </span>
+            View Experience
+          </a>
+        </div>
+
+        <!-- Contact Chips -->
+        <div class="hero-contact-chips">
+          <div class="contact-chip-glass" onclick="copyContactInfo('aishikadas31@gmail.com', 'Email copied!')"
+            title="Click to copy email">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </span>
+            <span>aishikadas31@gmail.com</span>
+          </div>
+          <div class="contact-chip-glass" onclick="copyContactInfo('9836751669', 'Phone copied!')"
+            title="Click to copy phone">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <span>+91 9836751669</span>
+          </div>
+          <a href="https://linkedin.com/in/aishika-das/" target="_blank" rel="noopener noreferrer"
+            class="contact-chip-glass">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+              </svg>
+            </span>
+            <span>in/aishika-das</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         CHEONGSACHORONG SILK LANTERN ENSEMBLE (INTERACTIVE THEME TOGGLE)
+         - Live Dancing Flame in Dark Mode
+         - Tiny Unlit Dark Dot in Light Mode
+         - Distinct Hover Feedback & Outward Light Bloom
+         ==================================================================== -->
+    <div class="lanterns-depth-stage">
+      <!-- Outward Light Bloom Field radiating from the lanterns into the hero -->
+      <div class="lantern-radiant-glow-field" aria-hidden="true"></div>
+
+      <div class="lantern-ceiling-mount"></div>
+
+      <!-- 1. Background Atmospheric Lantern -->
+      <div class="lantern-pod pod-background" title="Cheongsachorong Theme Toggle">
+        <svg class="korean-lantern-svg" viewBox="0 0 140 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="flameGlowBg" cx="70" cy="193" r="14" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fffef7" stop-opacity="0.85" />
+              <stop offset="0.5" stop-color="#c8dfdb" stop-opacity="0.5" />
+              <stop offset="1" stop-color="#3368a0" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <line x1="70" y1="-1000" x2="70" y2="130" stroke="#3368a0" stroke-width="2.2" stroke-dasharray="3 2" />
+          <circle cx="70" cy="130" r="4.5" fill="#25507d" stroke="#3368a0" stroke-width="1.5" />
+          <path d="M44 137 L96 137 L90 142 L50 142 Z" fill="#25507d" />
+          <rect x="48" y="142" width="44" height="3" rx="1" fill="#3368a0" />
+          <path d="M48 145 Q30 169 44 193 L96 193 Q110 169 92 145 Z" fill="#3368a0" />
+          <path d="M44 193 Q30 217 48 241 L92 241 Q110 217 96 193 Z" fill="#66a3bf" />
+
+          <!-- Tiny Dark Dot (Light Mode) -->
+          <circle class="unlit-wick-dot" cx="70" cy="193" r="1.5" fill="#1f446d" />
+
+          <!-- Live Dancing Flame (Dark Mode) -->
+          <g class="lantern-illumination-cluster">
+            <circle class="candle-glow-aura" cx="70" cy="193" r="14" fill="url(#flameGlowBg)" />
+            <circle class="candle-flame-tongue" cx="70" cy="193" r="1.8" fill="#fffef7" />
+          </g>
+
+          <rect x="48" y="241" width="44" height="3" rx="1" fill="#3368a0" />
+          <path d="M50 244 L90 244 L96 249 L44 249 Z" fill="#25507d" />
+          <circle cx="70" cy="253" r="3" fill="#3368a0" />
+          <path d="M68 256 L64 300 M70 256 L70 303 M72 256 L76 300" stroke="#3368a0" stroke-width="1.6"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- 2. Midground Lantern -->
+      <div class="lantern-pod pod-midground" title="Cheongsachorong Theme Toggle">
+        <svg class="korean-lantern-svg" viewBox="0 0 140 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="midSilkBlueLong" x1="0" y1="0" x2="140" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#25507d" />
+              <stop offset="0.4" stop-color="#3368a0" />
+              <stop offset="0.8" stop-color="#4a80bd" />
+              <stop offset="1" stop-color="#25507d" />
+            </linearGradient>
+            <linearGradient id="midSilkLowerLong" x1="0" y1="0" x2="140" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#467c94" />
+              <stop offset="0.4" stop-color="#66a3bf" />
+              <stop offset="0.8" stop-color="#b6d7d2" />
+              <stop offset="1" stop-color="#467c94" />
+            </linearGradient>
+            <radialGradient id="flameGlowMid" cx="70" cy="165" r="16" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="0.45" stop-color="#c8dfdb" stop-opacity="0.45" />
+              <stop offset="1" stop-color="#66a3bf" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <line x1="70" y1="-1000" x2="70" y2="95" stroke="#3368a0" stroke-width="2.5" stroke-dasharray="3 2" />
+          <circle cx="70" cy="95" r="5" fill="#25507d" stroke="#66a3bf" stroke-width="1.8" />
+          <path d="M43 103 L97 103 L91 109 L49 109 Z" fill="#25507d" />
+          <rect x="47" y="109" width="46" height="4" rx="1.5" fill="#3368a0" />
+          <path d="M47 113 Q27 139 43 165 L97 165 Q113 139 93 113 Z" fill="url(#midSilkBlueLong)" />
+          <path d="M70 113 V165" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+          <path d="M43 165 Q27 191 47 217 L93 217 Q113 191 97 165 Z" fill="url(#midSilkLowerLong)" />
+
+          <!-- Tiny Dark Dot (Light Mode) -->
+          <circle class="unlit-wick-dot" cx="70" cy="165" r="1.6" fill="#1f446d" />
+
+          <!-- Live Dancing Flame (Dark Mode) -->
+          <g class="lantern-illumination-cluster">
+            <circle class="candle-glow-aura" cx="70" cy="165" r="16" fill="url(#flameGlowMid)" />
+            <path class="candle-flame-tongue" d="M70 159 Q72 164 70 168 Q68 164 70 159 Z" fill="#fffdf7" />
+            <circle class="candle-flame-tongue" cx="70" cy="165" r="1.5" fill="#ffffff" />
+          </g>
+
+          <path d="M70 165 V217" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+          <rect x="47" y="217" width="46" height="4" rx="1.5" fill="#3368a0" />
+          <path d="M49 221 L91 221 L97 227 L43 227 Z" fill="#25507d" />
+          <circle cx="70" cy="232" r="3.5" fill="#3368a0" />
+          <rect x="66" y="235" width="8" height="6" rx="2" fill="#66a3bf" />
+          <path d="M66 241 L62 290 M69 241 L68 293 M71 241 L72 293 M74 241 L78 290" stroke="#3368a0" stroke-width="1.8"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- 3. Primary Foreground Lantern (with Spacious Hover Tooltip & Live Flame) -->
+      <div class="lantern-pod pod-primary" title="Cheongsachorong Theme Toggle">
+        <!-- Floating Hover Tooltip: Spacious Distance Below Tassels -->
+        <div class="lantern-tooltip" aria-hidden="true">
+          <span class="asian-icon" style="width:13px;height:13px;color:var(--c-deep-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+          </span>
+          <span>Light up</span>
+        </div>
+
+        <svg class="korean-lantern-svg" viewBox="0 0 140 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="mainSilkBlueLong" x1="0" y1="0" x2="140" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1f446d" />
+              <stop offset="0.3" stop-color="#3368a0" />
+              <stop offset="0.7" stop-color="#4d86c7" />
+              <stop offset="1" stop-color="#1f446d" />
+            </linearGradient>
+            <linearGradient id="mainSilkLowerLong" x1="0" y1="0" x2="140" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3c6f85" />
+              <stop offset="0.3" stop-color="#66a3bf" />
+              <stop offset="0.7" stop-color="#c8dfdb" />
+              <stop offset="1" stop-color="#3c6f85" />
+            </linearGradient>
+            <radialGradient id="flameGlowPrimary" cx="70" cy="197" r="18" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" stop-opacity="0.9" />
+              <stop offset="0.45" stop-color="#c8dfdb" stop-opacity="0.45" />
+              <stop offset="1" stop-color="#66a3bf" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+
+          <line x1="70" y1="-1000" x2="70" y2="115" stroke="#3368a0" stroke-width="3" stroke-linecap="round" />
+          <line x1="70" y1="-1000" x2="70" y2="115" stroke="#66a3bf" stroke-width="1.2" stroke-dasharray="4 4" />
+          <circle cx="70" cy="-45" r="3" fill="#25507d" stroke="#c8dfdb" stroke-width="1" />
+          <circle cx="70" cy="-5" r="3" fill="#25507d" stroke="#c8dfdb" stroke-width="1" />
+          <circle cx="70" cy="35" r="3" fill="#25507d" stroke="#c8dfdb" stroke-width="1" />
+          <circle cx="70" cy="75" r="3" fill="#25507d" stroke="#c8dfdb" stroke-width="1" />
+          <circle cx="70" cy="115" r="6" fill="#25507d" stroke="#c8dfdb" stroke-width="2" />
+          <rect x="66" y="120" width="8" height="7" rx="2" fill="#3368a0" />
+
+          <path d="M40 127 L100 127 L93 134 L47 134 Z" fill="#1f446d" />
+          <rect x="45" y="134" width="50" height="5" rx="2" fill="#3368a0" />
+
+          <path d="M45 139 Q23 169 40 197 L100 197 Q117 169 95 139 Z" fill="url(#mainSilkBlueLong)" />
+          <path d="M70 139 V197" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+          <path d="M57 139 Q44 169 55 197" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" />
+          <path d="M83 139 Q96 169 85 197" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" />
+
+          <path d="M40 197 Q23 225 45 253 L95 253 Q117 225 100 197 Z" fill="url(#mainSilkLowerLong)" />
+
+          <!-- Tiny Dark Wick Dot (Visible in Light Mode, Dissolves in Dark Mode) -->
+          <circle class="unlit-wick-dot" cx="70" cy="197" r="1.8" fill="#1f446d" />
+
+          <!-- Live Dancing Flame with Soft Flickering Aura (Dark Mode) -->
+          <g class="lantern-illumination-cluster">
+            <circle class="candle-glow-aura" cx="70" cy="197" r="18" fill="url(#flameGlowPrimary)" />
+            <path class="candle-flame-tongue" d="M70 190 Q73 195 70 200 Q67 195 70 190 Z" fill="#fffdf7" />
+            <circle class="candle-flame-tongue" cx="70" cy="196" r="2" fill="#ffffff" />
+          </g>
+
+          <path d="M70 197 V253" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+          <path d="M55 197 Q44 225 57 253" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" />
+          <path d="M85 197 Q96 225 83 253" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" />
+
+          <rect x="45" y="253" width="50" height="5" rx="2" fill="#3368a0" />
+          <path d="M47 258 L93 258 L100 265 L40 265 Z" fill="#1f446d" />
+
+          <circle cx="70" cy="272" r="4.5" fill="#3368a0" stroke="#c8dfdb" stroke-width="1.5" />
+          <rect x="65" y="276" width="10" height="9" rx="2.5" fill="#66a3bf" />
+          <circle cx="70" cy="280.5" r="2" fill="#c8dfdb" />
+          <path d="M65 285 L60 350 M67.5 285 L65 353 M70 285 L70 357 M72.5 285 L75 353 M75 285 L80 350" stroke="#3368a0"
+            stroke-width="2.2" stroke-linecap="round" />
+          <path d="M66.5 285 L63 347 M71 285 L71 351 M73.5 285 L77 347" stroke="#66a3bf" stroke-width="1.4"
+            stroke-linecap="round" />
+          <rect x="64" y="291" width="12" height="4" rx="1.5" fill="#c8dfdb" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work Section -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tagline">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 3c1.5 3 4 5.5 4 8.5 0 2.5-1.8 4.5-4 4.5s-4-2-4-4.5C8 8.5 10.5 6 12 3z" />
+              <path d="M12 16c-3 0-6.5-1.5-8-4 1.5 4 5 7 8 7s6.5-3 8-7c-1.5 2.5-5 4-8 4z" />
+            </svg>
+          </span>
+          Portfolio Gallery
+        </div>
+        <h2 class="section-heading">Featured Projects & Case Studies</h2>
+        <p class="section-subtext">Enterprise SaaS dashboards, healthcare platforms, systems architecture, and digital
+          product designs.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs-row">
+        <button class="filter-tab-btn active" data-filter="all">All Projects (8)</button>
+        <button class="filter-tab-btn" data-filter="enterprise">Enterprise & Healthcare (4)</button>
+        <button class="filter-tab-btn" data-filter="personal">Personal & Web (4)</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tagline">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2L3 7h18L12 2zM5 7v14M19 7v14M2 13h20M9 21v-5h6v5" />
+            </svg>
+          </span>
+          Work History
+        </div>
+        <h2 class="section-heading">Professional Experience</h2>
+        <p class="section-subtext">Enterprise design engineering, component architecture, and generative AI research
+          workflows.</p>
+      </div>
+
+      <div class="experience-glass-box">
+        <div class="exp-top-row">
+          <div class="exp-title-block">
+            <h3>Habot Connect DMCC</h3>
+            <div class="exp-role-badge">UI/UX Designer & Prompt Engineer</div>
+          </div>
+          <span class="badge-glass badge-status">
+            <span class="asian-icon" style="width:14px;height:14px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </span>
+            October 2025 — Present (1+ Year)
+          </span>
+        </div>
+
+        <div class="exp-breakdown-grid">
+          <div class="exp-pillar-glass">
+            <div class="pillar-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
+                  <line x1="12" y1="21" x2="7" y2="4" />
+                  <line x1="12" y1="21" x2="17" y2="4" />
+                </svg>
+              </span>
+            </div>
+            <h4>Enterprise UI & Healthcare Design</h4>
+            <p>Designed comprehensive HR analytics dashboards, corporate portals, and clinic/healthcare EHR workflows.
+              Applied Material Design principles, component-based tokens, and responsive Figma libraries.</p>
+          </div>
+
+          <div class="exp-pillar-glass">
+            <div class="pillar-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+              </span>
+            </div>
+            <h4>AI & Prompt Engineering</h4>
+            <p>Developed structured prompt frameworks for Google Gemini and NotebookLM to assist teams with research
+              analysis, documentation synthesis, and executive decision extraction.</p>
+          </div>
+
+          <div class="exp-pillar-glass">
+            <div class="pillar-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 8c4-3 8 3 12 0s4-2 4-2" />
+                  <path d="M4 14c4-3 8 3 12 0s4-2 4-2" />
+                  <path d="M4 20c4-3 8 3 12 0s4-2 4-2" />
+                </svg>
+              </span>
+            </div>
+            <h4>WF to DF Transformation</h4>
+            <p>Contributed to the core organizational initiative converting legacy manual business Workflows (WF) into
+              automated, real-time reactive Data Flow (DF) structures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design System & Tokens Section -->
+  <section id="design-system" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tagline">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <polygon points="12 7 15 12 12 17 9 12 12 7" />
+            </svg>
+          </span>
+          Design Engineering
+        </div>
+        <h2 class="section-heading">Design System & Token Architecture</h2>
+        <p class="section-subtext">A live look at component patterns, token scales, and typography hierarchies
+          engineered for enterprise scalability.</p>
+      </div>
+
+      <div class="ds-glass-box">
+        <div class="ds-grid">
+          <div class="ds-panel-glass">
+            <div class="ds-panel-header">
+              <span>
+                <span class="asian-icon" style="width:16px;height:16px;margin-right:0.35rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  </svg>
+                </span>
+                Component Variant Library
+              </span>
+              <span class="badge-glass" style="font-size:0.75rem;">WCAG 2.2 AA</span>
+            </div>
+
+            <div class="ds-buttons-row">
+              <button class="btn btn-primary btn-sm">Primary Solid</button>
+              <button class="btn btn-glass btn-sm">Frosted Glass</button>
+              <button class="btn btn-accent btn-sm">Accent Pill</button>
+            </div>
+
+            <div>
+              <label class="ds-input-label">Live Form Token Input</label>
+              <input type="text" class="ds-input-glass" placeholder="Type here to test focus state..."
+                value="Glassmorphic Focus Token">
+            </div>
+          </div>
+
+          <div class="ds-panel-glass">
+            <div class="ds-panel-header">
+              <span>
+                <span class="asian-icon" style="width:16px;height:16px;margin-right:0.35rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 3v18M3 12h18" />
+                  </svg>
+                </span>
+                Principles & 8pt Grid
+              </span>
+              <span class="badge-glass" style="font-size:0.75rem;">Auto-Layout 5.0</span>
+            </div>
+
+            <ul class="ds-principles-list">
+              <li>
+                <span class="asian-icon ds-check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                </span>
+                <span><strong>Component-Based:</strong> Modular Figma token variables across modes.</span>
+              </li>
+              <li>
+                <span class="asian-icon ds-check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                </span>
+                <span><strong>Contrast Verification:</strong> 4.8:1 minimum contrast across light & dark themes.</span>
+              </li>
+              <li>
+                <span class="asian-icon ds-check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                </span>
+                <span><strong>AI Integration:</strong> Structured prompt engineering for rapid UX synthesis.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tagline">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 2l4 4-10 10H8v-4L18 2zM3 21h18" />
+            </svg>
+          </span>
+          Capabilities
+        </div>
+        <h2 class="section-heading">Skills & Tooling Matrix</h2>
+        <p class="section-subtext">Multidisciplinary expertise across product design, interface engineering, and
+          generative AI workflows.</p>
+      </div>
+
+      <div class="skills-matrix-grid">
+        <!-- UI/UX -->
+        <div class="skills-category-glass">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
+                </svg>
+              </span>
+            </div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="skill-badges-wrap">
+            <span class="skill-badge-glass">User Research</span>
+            <span class="skill-badge-glass">User Flows</span>
+            <span class="skill-badge-glass">Information Architecture</span>
+            <span class="skill-badge-glass">Wireframing</span>
+            <span class="skill-badge-glass">Prototyping</span>
+            <span class="skill-badge-glass">Usability Testing</span>
+            <span class="skill-badge-glass">Responsive Design</span>
+            <span class="skill-badge-glass">Dashboard Design</span>
+            <span class="skill-badge-glass">Enterprise UX</span>
+            <span class="skill-badge-glass">Design Systems</span>
+            <span class="skill-badge-glass">Visual Design</span>
+          </div>
+        </div>
+
+        <!-- AI & Prompt Engineering -->
+        <div class="skills-category-glass">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+              </span>
+            </div>
+            <h3>AI & Prompting</h3>
+          </div>
+          <div class="skill-badges-wrap">
+            <span class="skill-badge-glass">Prompt Engineering</span>
+            <span class="skill-badge-glass">AI-Assisted UX Design</span>
+            <span class="skill-badge-glass">Structured Prompt Design</span>
+            <span class="skill-badge-glass">Context Engineering</span>
+            <span class="skill-badge-glass">Information Extraction</span>
+            <span class="skill-badge-glass">AI-Assisted Research</span>
+            <span class="skill-badge-glass">Workflow Analysis</span>
+            <span class="skill-badge-glass">Knowledge Base Creation</span>
+            <span class="skill-badge-glass">Decision Extraction</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category-glass">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                  <path d="M2 2l7.586 7.586" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+              </span>
+            </div>
+            <h3>Tools & Software</h3>
+          </div>
+          <div class="skill-badges-wrap">
+            <span class="skill-badge-glass">Figma</span>
+            <span class="skill-badge-glass">Google Gemini</span>
+            <span class="skill-badge-glass">NotebookLM</span>
+            <span class="skill-badge-glass">ProtoPie</span>
+            <span class="skill-badge-glass">Adobe Photoshop</span>
+            <span class="skill-badge-glass">Adobe Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Principles -->
+        <div class="skills-category-glass">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                </svg>
+              </span>
+            </div>
+            <h3>Design Principles</h3>
+          </div>
+          <div class="skill-badges-wrap">
+            <span class="skill-badge-glass">Material Design 3</span>
+            <span class="skill-badge-glass">Typography Systems</span>
+            <span class="skill-badge-glass">Color Theory</span>
+            <span class="skill-badge-glass">Visual Hierarchy</span>
+            <span class="skill-badge-glass">WCAG AA Accessibility</span>
+            <span class="skill-badge-glass">Consistent UI Patterns</span>
+            <span class="skill-badge-glass">Component-Based Design</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skills-category-glass">
+          <div class="skill-cat-head">
+            <div class="skill-cat-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </span>
+            </div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-badges-wrap">
+            <span class="skill-badge-glass">English (Professional)</span>
+            <span class="skill-badge-glass">Bengali (Native)</span>
+            <span class="skill-badge-glass">Hindi (Proficient)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials Section -->
+  <section id="credentials" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tagline">
+          <span class="asian-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+          </span>
+          Qualifications
+        </div>
+        <h2 class="section-heading">Education & Credentials</h2>
+        <p class="section-subtext">Verified academic qualifications and professional design credentials.</p>
+      </div>
+
+      <div class="edu-cards-grid">
+        <div class="edu-card-glass">
+          <div class="edu-icon-glass">
+            <span class="asian-icon" style="width:24px;height:24px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+            </span>
+          </div>
+          <div class="edu-content-block">
+            <h4>Google UX Design Professional Certificate</h4>
+            <div class="edu-institution-tag">Coursera | Authorized by Google</div>
+            <p class="edu-desc-text">Comprehensive 7-course program covering the complete UX lifecycle: user research,
+              wireframing, high-fidelity prototypes in Figma, usability testing, and accessible multi-platform design.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card-glass">
+          <div class="edu-icon-glass">
+            <span class="asian-icon" style="width:24px;height:24px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </span>
+          </div>
+          <div class="edu-content-block">
+            <h4>Bachelor's Degree</h4>
+            <div class="edu-institution-tag">Calcutta University (2020 — 2023)</div>
+            <p class="edu-desc-text">Graduated with a CGPA of <strong>7.07</strong>. Fostered analytical problem-solving
+              skills, structured research methodologies, and multidisciplinary communications.</p>
+            <div class="edu-secondary-note">
+              <strong>Higher Secondary:</strong> (2018 — 2020) | Score: <strong>83%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-glass-card">
+        <span class="badge-glass badge-status" style="margin-bottom: 1.25rem;">
+          <span class="status-pulse-dot"></span> Let's Build Something Exceptional
+        </span>
+        <h2>Ready to collaborate on your next product?</h2>
+        <p>Available for UI/UX design positions, AI product design collaborations, and component design system
+          engineering.</p>
+
+        <div class="contact-grid">
+          <div class="contact-channel-glass" onclick="copyContactInfo('aishikadas31@gmail.com', 'Email copied!')"
+            title="Click to copy">
+            <div class="channel-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </span>
+            </div>
+            <div class="channel-info-text">
+              <span class="channel-label">Email</span>
+              <strong class="channel-val">aishikadas31@gmail.com</strong>
+            </div>
+          </div>
+
+          <div class="contact-channel-glass" onclick="copyContactInfo('9836751669', 'Phone copied!')"
+            title="Click to copy">
+            <div class="channel-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+            </div>
+            <div class="channel-info-text">
+              <span class="channel-label">Phone</span>
+              <strong class="channel-val">+91 9836751669</strong>
+            </div>
+          </div>
+
+          <a href="https://linkedin.com/in/aishika-das/" target="_blank" rel="noopener noreferrer"
+            class="contact-channel-glass">
+            <div class="channel-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                </svg>
+              </span>
+            </div>
+            <div class="channel-info-text">
+              <span class="channel-label">LinkedIn</span>
+              <strong class="channel-val">in/aishika-das</strong>
+            </div>
+          </a>
+
+          <div class="contact-channel-glass">
+            <div class="channel-icon-glass">
+              <span class="asian-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 2L4 7h16L12 2zM6 7v6M18 7v6M3 13h18M5 13v7M19 13v7M2 20h20" />
+                </svg>
+              </span>
+            </div>
+            <div class="channel-info-text">
+              <span class="channel-label">Location</span>
+              <strong class="channel-val">Kolkata, India</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions-row">
+          <a href="mailto:aishikadas31@gmail.com?subject=UI%2FUX%20Design%20Opportunity%20-%20Aishika%20Das"
+            class="btn btn-primary">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </span>
+            Send Direct Email
+          </a>
+          <button class="btn btn-glass" onclick="window.print()">
+            <span class="asian-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9" />
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                <rect x="6" y="14" width="12" height="8" />
+              </svg>
+            </span>
+            Print / Save PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer-glass">
+    <div class="container footer-flex">
+      <div>© 2026 <strong>Aishika Das</strong>. UI/UX Designer & Prompt Engineer.</div>
+      <div class="footer-links-row">
+        <a href="#hero">Back to Top ↑</a>
+        <a href="https://linkedin.com/in/aishika-das/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:aishikadas31@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-container-glass">
+      <button class="modal-close-glass" onclick="closeModal()" aria-label="Close modal">
+        ✕
+      </button>
+      <div id="modalDynamicBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
