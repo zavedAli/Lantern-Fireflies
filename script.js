@@ -706,19 +706,27 @@ function updateThemeTooltips(theme) {
 
 function setTheme(nextTheme) {
   document.documentElement.setAttribute("data-theme", nextTheme);
-  localStorage.setItem("aishika_theme", nextTheme);
+  try {
+    sessionStorage.setItem("aishika_user_theme", nextTheme);
+  } catch (e) {}
   updateThemeTooltips(nextTheme);
 }
 
 function toggleTheme() {
-  const current = document.documentElement.getAttribute("data-theme") || "dark";
-  const next = current === "dark" ? "light" : "dark";
+  const current = document.documentElement.getAttribute("data-theme") || "light";
+  const next = current === "light" ? "dark" : "light";
   setTheme(next);
 }
 
 function initTheme() {
-  const savedTheme = localStorage.getItem("aishika_theme") || "dark";
-  setTheme(savedTheme);
+  // Clear any legacy dark-mode override stored in browser localStorage
+  try {
+    localStorage.removeItem("aishika_theme");
+    localStorage.removeItem("aishika_theme_v2");
+  } catch (e) {}
+
+  const activeTheme = (typeof sessionStorage !== "undefined" && sessionStorage.getItem("aishika_user_theme")) || "light";
+  setTheme(activeTheme);
 
   // 1. Navbar Theme Toggle Button
   const toggleBtn = document.getElementById("themeToggleBtn");
