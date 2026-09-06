@@ -6,7 +6,7 @@
    ========================================================================== */
 
 :root {
-  /* Brand Palette (Ocean & Slate Blue) */
+
   --c-deep-blue: #3368a0;
   --c-slate-blue: #66a3bf;
   --c-seafoam: #c8dfdb;
@@ -2361,10 +2361,12 @@ html[data-theme="dark"] .lantern-pod.pod-background .korean-lantern-svg {
 .modal-container-glass::-webkit-scrollbar {
   width: 6px;
 }
+
 .modal-container-glass::-webkit-scrollbar-track {
   background: transparent;
   margin: 1rem 0;
 }
+
 .modal-container-glass::-webkit-scrollbar-thumb {
   background: var(--modal-accent);
   border-radius: 9999px;
