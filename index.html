@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -58,9 +58,8 @@
         <ul class="nav-menu">
           <li><a href="#work" class="nav-link">Selected Work</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#design-system" class="nav-link">Design Tokens</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#credentials" class="nav-link">Qualifications</a></li>
         </ul>
       </nav>
 
@@ -97,7 +96,7 @@
   <section id="hero" class="hero-section">
     <div class="container">
       <div class="hero-intro">
-        <div class="hero-badges-row">
+        <!-- <div class="hero-badges-row">
           <span class="badge-glass badge-status">
             <span class="status-pulse-dot"></span> Available for UI/UX & Product Design Roles
           </span>
@@ -110,7 +109,7 @@
             </span>
             Kolkata, India
           </span>
-        </div>
+        </div> -->
 
         <h1 class="hero-title">
           Hi, I'm <span class="gradient-highlight">Aishika Das</span>
@@ -125,9 +124,11 @@
         </div>
 
         <p class="hero-bio">
-          Designing scalable enterprise SaaS interfaces, clinical healthcare systems, and tokenized design systems in
-          Figma. At <strong>Habot Connect DMCC</strong>, I blend deep user research with Google Gemini and NotebookLM
-          prompt engineering to transition complex business workflows into high-velocity data flows.
+          I turn complex systems into clear, intuitive digital experiences.<br>
+          From enterprise SaaS and healthcare platforms to scalable design systems, I design with both people and
+          products in mind.<br>
+          Curious by nature and detail-driven by design, I explore how UX, systems thinking, and AI can create better
+          ways to work.
         </p>
 
         <div class="hero-cta-row">
@@ -392,15 +393,43 @@
           product designs.</p>
       </div>
 
-      <!-- Filter Tabs -->
-      <div class="filter-tabs-row">
-        <button class="filter-tab-btn active" data-filter="all">All Projects (8)</button>
-        <button class="filter-tab-btn" data-filter="enterprise">Enterprise & Healthcare (4)</button>
-        <button class="filter-tab-btn" data-filter="personal">Personal & Web (4)</button>
+      <!-- Carousel Controls & Filter Bar -->
+      <div class="projects-controls-bar">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-row">
+          <button class="filter-tab-btn active" data-filter="all">All Projects (9)</button>
+          <button class="filter-tab-btn" data-filter="featured">Featured & Figma (5)</button>
+          <button class="filter-tab-btn" data-filter="enterprise">Enterprise & Systems (4)</button>
+        </div>
+
+        <!-- Carousel Nav Buttons & Counter -->
+        <div class="carousel-nav-group">
+          <button id="prevProjectBtn" class="carousel-nav-btn" aria-label="Previous project slide"
+            title="Previous slide">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <span id="carouselCounter" class="carousel-counter-badge">01 / 09</span>
+          <button id="nextProjectBtn" class="carousel-nav-btn" aria-label="Next project slide" title="Next slide">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid" id="projectsGrid"></div>
+      <!-- Projects Carousel Stage -->
+      <div class="projects-carousel-container">
+        <div class="projects-carousel-track" id="projectsGrid"></div>
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="carousel-pagination-dots" id="carouselDots"></div>
     </div>
   </section>
 
@@ -418,179 +447,222 @@
           Work History
         </div>
         <h2 class="section-heading">Professional Experience</h2>
-        <p class="section-subtext">Enterprise design engineering, component architecture, and generative AI research
-          workflows.</p>
+        <p class="section-subtext">Enterprise design engineering, mobile & web product design, component architecture,
+          and generative AI research workflows.</p>
       </div>
 
-      <div class="experience-glass-box">
-        <div class="exp-top-row">
-          <div class="exp-title-block">
-            <h3>Habot Connect DMCC</h3>
-            <div class="exp-role-badge">UI/UX Designer & Prompt Engineer</div>
-          </div>
-          <span class="badge-glass badge-status">
-            <span class="asian-icon" style="width:14px;height:14px;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
+      <div class="experience-list" style="display:flex; flex-direction:column; gap:1.75rem;">
+        <!-- 1. Habot Connect DMCC -->
+        <div class="experience-glass-box">
+          <div class="exp-top-row">
+            <div class="exp-title-block">
+              <h3>Habot Connect DMCC</h3>
+              <div class="exp-role-badge">UI/UX Designer & Prompt Engineer</div>
+            </div>
+            <span class="badge-glass badge-status">
+              <span class="asian-icon" style="width:14px;height:14px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </span>
+              October 2025 — Present
             </span>
-            October 2025 — Present (1+ Year)
-          </span>
-        </div>
-
-        <div class="exp-breakdown-grid">
-          <div class="exp-pillar-glass">
-            <div class="pillar-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
-                  <line x1="12" y1="21" x2="7" y2="4" />
-                  <line x1="12" y1="21" x2="17" y2="4" />
-                </svg>
-              </span>
-            </div>
-            <h4>Enterprise UI & Healthcare Design</h4>
-            <p>Designed comprehensive HR analytics dashboards, corporate portals, and clinic/healthcare EHR workflows.
-              Applied Material Design principles, component-based tokens, and responsive Figma libraries.</p>
           </div>
 
-          <div class="exp-pillar-glass">
-            <div class="pillar-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3" />
-                  <path
-                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                </svg>
-              </span>
+          <div class="exp-breakdown-grid">
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
+                    <line x1="12" y1="21" x2="7" y2="4" />
+                    <line x1="12" y1="21" x2="17" y2="4" />
+                  </svg>
+                </span>
+              </div>
+              <h4>Enterprise UI & Healthcare Design</h4>
+              <p>Designed comprehensive HR analytics dashboards, corporate portals, and clinic/healthcare EHR workflows.
+                Applied Material Design principles, component-based tokens, and responsive Figma libraries.</p>
             </div>
-            <h4>AI & Prompt Engineering</h4>
-            <p>Developed structured prompt frameworks for Google Gemini and NotebookLM to assist teams with research
-              analysis, documentation synthesis, and executive decision extraction.</p>
-          </div>
 
-          <div class="exp-pillar-glass">
-            <div class="pillar-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M4 8c4-3 8 3 12 0s4-2 4-2" />
-                  <path d="M4 14c4-3 8 3 12 0s4-2 4-2" />
-                  <path d="M4 20c4-3 8 3 12 0s4-2 4-2" />
-                </svg>
-              </span>
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                  </svg>
+                </span>
+              </div>
+              <h4>AI & Prompt Engineering</h4>
+              <p>Developed structured prompt frameworks for Google Gemini and NotebookLM to assist teams with research
+                analysis, documentation synthesis, and executive decision extraction.</p>
             </div>
-            <h4>WF to DF Transformation</h4>
-            <p>Contributed to the core organizational initiative converting legacy manual business Workflows (WF) into
-              automated, real-time reactive Data Flow (DF) structures.</p>
+
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 8c4-3 8 3 12 0s4-2 4-2" />
+                    <path d="M4 14c4-3 8 3 12 0s4-2 4-2" />
+                    <path d="M4 20c4-3 8 3 12 0s4-2 4-2" />
+                  </svg>
+                </span>
+              </div>
+              <h4>WF to DF Transformation</h4>
+              <p>Contributed to the core organizational initiative converting legacy manual business Workflows (WF) into
+                automated, real-time reactive Data Flow (DF) structures.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Design System & Tokens Section -->
-  <section id="design-system" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-tagline">
-          <span class="asian-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9" />
-              <polygon points="12 7 15 12 12 17 9 12 12 7" />
-            </svg>
-          </span>
-          Design Engineering
-        </div>
-        <h2 class="section-heading">Design System & Token Architecture</h2>
-        <p class="section-subtext">A live look at component patterns, token scales, and typography hierarchies
-          engineered for enterprise scalability.</p>
-      </div>
+        <!-- 2. Codsoft -->
+        <div class="experience-glass-box">
+          <div class="exp-top-row">
+            <div class="exp-title-block">
+              <h3>Codsoft</h3>
+              <div class="exp-role-badge">UI/UX Designer (Internship)</div>
+            </div>
+            <span class="badge-glass">
+              <span class="asian-icon" style="width:14px;height:14px;color:var(--c-deep-blue);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </span>
+              Aug 2025 – Oct 2025
+            </span>
+          </div>
 
-      <div class="ds-glass-box">
-        <div class="ds-grid">
-          <div class="ds-panel-glass">
-            <div class="ds-panel-header">
-              <span>
-                <span class="asian-icon" style="width:16px;height:16px;margin-right:0.35rem;">
+          <div class="exp-breakdown-grid">
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                  </svg>
+                </span>
+              </div>
+              <h4>Mobile App & Onboarding UI</h4>
+              <p>Designed frictionless mobile user onboarding flows, authentication systems, and sign-up interfaces with
+                focus on conversion optimization and user experience clarity.</p>
+            </div>
+
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path
-                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </span>
-                Component Variant Library
-              </span>
-              <span class="badge-glass" style="font-size:0.75rem;">WCAG 2.2 AA</span>
+              </div>
+              <h4>Interactive Prototyping</h4>
+              <p>Crafted high-fidelity micro-interactions and interactive component prototypes in Figma, testing
+                navigation ergonomics and gestural transitions.</p>
             </div>
 
-            <div class="ds-buttons-row">
-              <button class="btn btn-primary btn-sm">Primary Solid</button>
-              <button class="btn btn-glass btn-sm">Frosted Glass</button>
-              <button class="btn btn-accent btn-sm">Accent Pill</button>
-            </div>
-
-            <div>
-              <label class="ds-input-label">Live Form Token Input</label>
-              <input type="text" class="ds-input-glass" placeholder="Type here to test focus state..."
-                value="Glassmorphic Focus Token">
-            </div>
-          </div>
-
-          <div class="ds-panel-glass">
-            <div class="ds-panel-header">
-              <span>
-                <span class="asian-icon" style="width:16px;height:16px;margin-right:0.35rem;">
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                     stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M12 3v18M3 12h18" />
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
                   </svg>
                 </span>
-                Principles & 8pt Grid
+              </div>
+              <h4>Usability & Design Iteration</h4>
+              <p>Conducted heuristic evaluation and user flow testing to identify friction points and enhance
+                screen-to-screen task completion speeds.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Webskitters Technology Solutions -->
+        <div class="experience-glass-box">
+          <div class="exp-top-row">
+            <div class="exp-title-block">
+              <h3>Webskitters Technology Solutions Private Ltd.</h3>
+              <div class="exp-role-badge">UI/UX Designer (Apprenticeship)</div>
+            </div>
+            <span class="badge-glass">
+              <span class="asian-icon" style="width:14px;height:14px;color:var(--c-deep-blue);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
               </span>
-              <span class="badge-glass" style="font-size:0.75rem;">Auto-Layout 5.0</span>
+              Dec 2024 – Oct 2025
+            </span>
+          </div>
+
+          <div class="exp-breakdown-grid">
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </span>
+              </div>
+              <h4>Web & E-Commerce Platforms</h4>
+              <p>Conceptualized and designed responsive digital storefronts, landing pages, and web applications
+                catering to diverse industry verticals including retail and fitness.</p>
             </div>
 
-            <ul class="ds-principles-list">
-              <li>
-                <span class="asian-icon ds-check-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                     stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <polyline points="9 12 11 14 15 10" />
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
                   </svg>
                 </span>
-                <span><strong>Component-Based:</strong> Modular Figma token variables across modes.</span>
-              </li>
-              <li>
-                <span class="asian-icon ds-check-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              </div>
+              <h4>Component Systems & Figma Libraries</h4>
+              <p>Built and organized structured component libraries, auto-layout UI blocks, and style guides to
+                streamline project turnaround and maintain design coherence.</p>
+            </div>
+
+            <div class="exp-pillar-glass">
+              <div class="pillar-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                     stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <polyline points="9 12 11 14 15 10" />
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                   </svg>
                 </span>
-                <span><strong>Contrast Verification:</strong> 4.8:1 minimum contrast across light & dark themes.</span>
-              </li>
-              <li>
-                <span class="asian-icon ds-check-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <polyline points="9 12 11 14 15 10" />
-                  </svg>
-                </span>
-                <span><strong>AI Integration:</strong> Structured prompt engineering for rapid UX synthesis.</span>
-              </li>
-            </ul>
+              </div>
+              <h4>Developer Handoff & Collaboration</h4>
+              <p>Worked directly alongside frontend engineering teams to ensure pixel-perfect fidelity, precise
+                responsive breakpoints, and WCAG AA accessibility standards.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -616,132 +688,151 @@
       </div>
 
       <div class="skills-matrix-grid">
-        <!-- UI/UX -->
-        <div class="skills-category-glass">
+        <!-- 1. UI/UX & Product Design (Featured Card) -->
+        <div class="skills-category-glass card-featured-ui">
           <div class="skill-cat-head">
-            <div class="skill-cat-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
-                </svg>
-              </span>
+            <div class="skill-cat-title-group">
+              <div class="skill-cat-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 21a9 9 0 0 1-9-9c0-3 2-6 5-8l4 17 4-17c3 2 5 5 5 8a9 9 0 0 1-9 9z" />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <h3>UI/UX & Product Design</h3>
+              </div>
             </div>
-            <h3>UI/UX Design</h3>
+            <span class="skill-count-badge">11 Capabilities</span>
           </div>
+          <p class="skill-cat-desc">Translating complex workflows into intuitive user experiences through qualitative
+            user research, ergonomic wireframing, enterprise dashboards, and scalable multi-platform design.</p>
           <div class="skill-badges-wrap">
-            <span class="skill-badge-glass">User Research</span>
-            <span class="skill-badge-glass">User Flows</span>
-            <span class="skill-badge-glass">Information Architecture</span>
-            <span class="skill-badge-glass">Wireframing</span>
-            <span class="skill-badge-glass">Prototyping</span>
-            <span class="skill-badge-glass">Usability Testing</span>
-            <span class="skill-badge-glass">Responsive Design</span>
-            <span class="skill-badge-glass">Dashboard Design</span>
-            <span class="skill-badge-glass">Enterprise UX</span>
-            <span class="skill-badge-glass">Design Systems</span>
-            <span class="skill-badge-glass">Visual Design</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>User Research
+              & Personas</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>User Flows &
+              Wireframing</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Information Architecture</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Interactive
+              Prototyping</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Usability Testing &
+              Heuristics</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Responsive Web & Mobile</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Enterprise
+              SaaS Dashboards</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Design Systems Architecture</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Visual & Spatial UI Design</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Micro-Interactions</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Developer Handoff Specs</span>
           </div>
         </div>
 
-        <!-- AI & Prompt Engineering -->
-        <div class="skills-category-glass">
+        <!-- 2. AI & Prompt Engineering (Featured Card) -->
+        <div class="skills-category-glass card-featured-ai">
           <div class="skill-cat-head">
-            <div class="skill-cat-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3" />
-                  <path
-                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                </svg>
-              </span>
+            <div class="skill-cat-title-group">
+              <div class="skill-cat-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <h3>AI & Prompt Engineering</h3>
+              </div>
             </div>
-            <h3>AI & Prompting</h3>
+            <span class="skill-count-badge">9 Workflows</span>
           </div>
+          <p class="skill-cat-desc">Architecting structured prompt frameworks, context injection pipelines, and
+            LLM-accelerated research workflows for digital product teams.</p>
           <div class="skill-badges-wrap">
-            <span class="skill-badge-glass">Prompt Engineering</span>
-            <span class="skill-badge-glass">AI-Assisted UX Design</span>
-            <span class="skill-badge-glass">Structured Prompt Design</span>
-            <span class="skill-badge-glass">Context Engineering</span>
-            <span class="skill-badge-glass">Information Extraction</span>
-            <span class="skill-badge-glass">AI-Assisted Research</span>
-            <span class="skill-badge-glass">Workflow Analysis</span>
-            <span class="skill-badge-glass">Knowledge Base Creation</span>
-            <span class="skill-badge-glass">Decision Extraction</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Structured
+              Prompt Design</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Context &
+              Persona Framing</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>AI-Assisted UX Ideation</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Information & Insight
+              Extraction</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Workflow Decision Mapping</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Knowledge Base Architecture</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Research
+              Synthesis Automation</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Prompt Evaluation & Testing</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Few-Shot Pattern Engineering</span>
           </div>
         </div>
 
-        <!-- Tools -->
-        <div class="skills-category-glass">
+        <!-- 3. Tools & Digital Ecosystem -->
+        <div class="skills-category-glass card-tools">
           <div class="skill-cat-head">
-            <div class="skill-cat-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
-                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
-                  <path d="M2 2l7.586 7.586" />
-                  <circle cx="11" cy="11" r="2" />
-                </svg>
-              </span>
+            <div class="skill-cat-title-group">
+              <div class="skill-cat-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                    <path d="M2 2l7.586 7.586" />
+                    <circle cx="11" cy="11" r="2" />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <h3>Tools & Software</h3>
+              </div>
             </div>
-            <h3>Tools & Software</h3>
+            <span class="skill-count-badge">Primary Stack</span>
           </div>
+          <p class="skill-cat-desc">Expert tooling across rapid vector drafting, advanced component variables, and
+            generative AI models.</p>
           <div class="skill-badges-wrap">
-            <span class="skill-badge-glass">Figma</span>
-            <span class="skill-badge-glass">Google Gemini</span>
-            <span class="skill-badge-glass">NotebookLM</span>
-            <span class="skill-badge-glass">ProtoPie</span>
-            <span class="skill-badge-glass">Adobe Photoshop</span>
-            <span class="skill-badge-glass">Adobe Illustrator</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Figma &
+              FigJam</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Google Gemini Pro</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Google NotebookLM</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>ProtoPie</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Adobe Photoshop</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Adobe Illustrator</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>HTML5 / CSS3 / JS</span>
           </div>
         </div>
 
-        <!-- Principles -->
-        <div class="skills-category-glass">
+        <!-- 4. Design Systems & Standards -->
+        <div class="skills-category-glass card-principles">
           <div class="skill-cat-head">
-            <div class="skill-cat-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
-                </svg>
-              </span>
+            <div class="skill-cat-title-group">
+              <div class="skill-cat-icon-glass">
+                <span class="asian-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <h3>Design Systems & Specs</h3>
+              </div>
             </div>
-            <h3>Design Principles</h3>
+            <span class="skill-count-badge">Standards</span>
           </div>
+          <p class="skill-cat-desc">Rigorous adherence to atomic design tokens, accessible color contrasts, and
+            systematic UI libraries.</p>
           <div class="skill-badges-wrap">
-            <span class="skill-badge-glass">Material Design 3</span>
-            <span class="skill-badge-glass">Typography Systems</span>
-            <span class="skill-badge-glass">Color Theory</span>
-            <span class="skill-badge-glass">Visual Hierarchy</span>
-            <span class="skill-badge-glass">WCAG AA Accessibility</span>
-            <span class="skill-badge-glass">Consistent UI Patterns</span>
-            <span class="skill-badge-glass">Component-Based Design</span>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="skills-category-glass">
-          <div class="skill-cat-head">
-            <div class="skill-cat-icon-glass">
-              <span class="asian-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path
-                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </span>
-            </div>
-            <h3>Languages</h3>
-          </div>
-          <div class="skill-badges-wrap">
-            <span class="skill-badge-glass">English (Professional)</span>
-            <span class="skill-badge-glass">Bengali (Native)</span>
-            <span class="skill-badge-glass">Hindi (Proficient)</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>Material
+              Design 3</span>
+            <span class="skill-badge-glass skill-pill-highlight"><span class="skill-dot-indicator"></span>WCAG AA
+              Accessibility</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Typography Scalability</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Color & Contrast Semantics</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Spatial 8pt Grid Systems</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Component Variable Sets</span>
+            <span class="skill-badge-glass"><span class="skill-dot-indicator"></span>Consistent UI Patterns</span>
           </div>
         </div>
       </div>
@@ -889,8 +980,8 @@
         </div>
 
         <div class="contact-actions-row">
-          <a href="mailto:aishikadas31@gmail.com?subject=UI%2FUX%20Design%20Opportunity%20-%20Aishika%20Das"
-            class="btn btn-primary">
+          <a href="mailto:aishikadas31@gmail.com?subject=UI%2FUX%20Design%20Opportunity%20-%20Aishika%20Das&body=Hi%20Aishika%2C%0A%0AI%20came%20across%20your%20design%20portfolio%20and%20would%20love%20to%20discuss%20an%20opportunity%20or%20project%20with%20you.%0A%0ADetails%3A%0A-%20Company%20%2F%20Organization%3A%20%0A-%20Project%20Scope%20%2F%20Role%3A%20%0A-%20Timeline%3A%20%0A%0ALooking%20forward%20to%20connecting!%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
+            class="btn btn-primary" title="Launch default email app with preset message">
             <span class="asian-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -900,16 +991,21 @@
             </span>
             Send Direct Email
           </a>
-          <button class="btn btn-glass" onclick="window.print()">
-            <span class="asian-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polyline points="6 9 6 2 18 2 18 9" />
-                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                <rect x="6" y="14" width="12" height="8" />
-              </svg>
-            </span>
-            Print / Save PDF
+
+          <button class="btn btn-glass btn-gmail" onclick="openGmailCompose()" title="Compose in Gmail Web">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+            </svg>
+            Gmail Web
+          </button>
+
+          <button class="btn btn-glass btn-outlook" onclick="openOutlookCompose()" title="Compose in Outlook Web">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+              <path
+                d="M24 7.875v8.25A2.625 2.625 0 0 1 21.375 18.75H9.75v-10.875h11.625A2.625 2.625 0 0 1 24 7.875zM15.375 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM0 6.375v11.25A2.625 2.625 0 0 0 2.625 20.25h6V3.75h-6A2.625 2.625 0 0 0 0 6.375z" />
+            </svg>
+            Outlook
           </button>
         </div>
       </div>
@@ -923,17 +1019,15 @@
       <div class="footer-links-row">
         <a href="#hero">Back to Top ↑</a>
         <a href="https://linkedin.com/in/aishika-das/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:aishikadas31@gmail.com">Email</a>
+        <a
+          href="mailto:aishikadas31@gmail.com?subject=UI%2FUX%20Design%20Opportunity%20-%20Aishika%20Das&body=Hi%20Aishika%2C%0A%0AI%20came%20across%20your%20design%20portfolio%20and%20would%20love%20to%20discuss%20an%20opportunity%20or%20project%20with%20you.%0A%0ADetails%3A%0A-%20Company%20%2F%20Organization%3A%20%0A-%20Project%20Scope%20%2F%20Role%3A%20%0A-%20Timeline%3A%20%0A%0ALooking%20forward%20to%20connecting!%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D">Email</a>
       </div>
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog">
+  <!-- Case Study Modal -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-container-glass">
-      <button class="modal-close-glass" onclick="closeModal()" aria-label="Close modal">
-        ✕
-      </button>
       <div id="modalDynamicBody"></div>
     </div>
   </div>

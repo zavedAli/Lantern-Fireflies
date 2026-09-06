@@ -8,17 +8,19 @@ A portfolio website for **Aishika Das** — UI/UX Designer, Prompt Engineer, and
 
 ## ✨ Key Highlights & Features
 
-- **Hero & Identity Section:** High-impact typography, status badge, live contact chips with 1-click clipboard copy, and visual avatar frame.
-- **Experience Timeline:** Detailed breakdown of work at **Habot Connect DMCC** (Enterprise HR Dashboards, Healthcare UI, Prompt Engineering, WF to DF Transformation).
-- **Interactive AI Prompt Lab:** Working workbench demonstrating structured prompt architectures for Google Gemini, NotebookLM knowledge graphs, and reactive Data Flow schemas with 1-click prompt copying.
+- **Hero & Identity Section:** High-impact typography, status badge, live contact chips with 1-click clipboard copy, and responsive navigation.
+- **Experience Timeline:** Detailed breakdown of work at:
+  - **Habot Connect DMCC** (Enterprise HR Dashboards, Healthcare UI, Prompt Engineering, WF to DF Transformation).
+  - **Codsoft** (Mobile App UI, Frictionless Sign-Up & Onboarding Design, Interactive Prototyping).
+  - **Webskitters Technology Solutions** (Responsive Web & E-Commerce Platforms, Design Systems & Component Libraries).
 - **Filterable Project Showcase & Modal Case Studies:**
+  - *Featured & Figma Projects:* Real Estate Website, Gym Website, Beauty Product Purchasing Website, Mobile Sign-Up Screen Design, Coffee Purchasing Website (each with direct Figma canvas links).
   - *Enterprise SaaS & Healthcare:* HR Dashboard, Clinic & Healthcare Portal, Workflow to Data Flow Transformation, AI Prompt Engineering & NotebookLM.
-  - *Personal & E-Commerce:* Real Estate Web Platform, Fitness & Gym App, Job Portal, Artisanal Coffee E-commerce.
-  - *Case Study Modals:* Deep dive into problem statements, design strategies, measurable metrics, and deliverables.
+  - *Case Study Modals:* Deep dive into problem statements, design strategies, measurable metrics, deliverables, and live Figma files.
 - **Skills Matrix:** Visually categorized into UI/UX Design, AI & Prompt Engineering, Tools & Prototyping, Design Principles (Material Design 3), and Languages.
-- **Verified Education & Credentials:** Google UX Design Professional Certificate badge (Coursera) and Calcutta University degree details.
+- **Qualifications:** Google UX Design Professional Certificate badge (Coursera) and Calcutta University degree details.
 - **Direct Contact Hub:** Quick-action buttons for email, phone/WhatsApp, LinkedIn, and print/save-as-PDF.
-- **Dark/Light Theme:** Custom theme switcher with persistent local storage state.
+- **Dark/Light Theme:** Cheongsachorong lantern interactive theme switcher with persistent local storage state.
 
 ---
 

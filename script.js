@@ -6,6 +6,96 @@
 
 const projectsData = [
   {
+    id: "real-estate-web",
+    title: "Real Estate Website",
+    category: "featured",
+    categoryLabel: "Featured Project",
+    desc: "A modern property discovery and investment platform featuring interactive neighborhood map filters, 3D tour previews, sticky mortgage calculations, and clean architectural cards.",
+    tags: ["Figma", "UI/UX Design", "Responsive Web", "Property Discovery"],
+    figmaUrl: "https://www.figma.com/design/LfTSZibvzVQYyTkgMLe0a2/-Aishika--real-estate-FP?node-id=0-1&p=f&t=bqDFZfFJ33o4iP9V-0",
+    metrics: [
+      { number: "4.9/5", label: "User Usability Rating" },
+      { number: "8+", label: "Responsive Breakpoints" },
+      { number: "100%", label: "Custom Component Kit" }
+    ],
+    problem: "Real estate websites often overwhelm buyers with disorganized filters, low-resolution media, and clunky calculation forms.",
+    solution: "Engineered a card-based visual discovery UI with dual list/map split view, sticky price calculators, and seamless direct agent booking.",
+    process: "Conducted competitive benchmarking, built modular property card components with micro-interactions, and tested mobile search usability.",
+    deliverables: ["Full Figma Design System", "High-Fidelity Desktop & Mobile Prototypes", "Custom Property Card Micro-Interactions", "Map & Filter Component System"]
+  },
+  {
+    id: "fitness-gym-web",
+    title: "Gym Website",
+    category: "featured",
+    categoryLabel: "Featured Project",
+    desc: "High-energy fitness portal and gym membership platform with dynamic workout tracking, trainer scheduling, class reservations, and interactive telemetry widgets.",
+    tags: ["Figma", "UI/UX Design", "Fitness & Gym", "Gamification"],
+    figmaUrl: "https://www.figma.com/design/msXjKozJ8SaVMFzxzXv8f6/Fitness?t=bqDFZfFJ33o4iP9V-0",
+    metrics: [
+      { number: "52%", label: "Booking Conversion Boost" },
+      { number: "15+", label: "Micro-animations" },
+      { number: "Adaptive", label: "Tonal UI Themes" }
+    ],
+    problem: "Gym members found tracking class schedules and coach availability cumbersome on generic booking platforms.",
+    solution: "Crafted a vibrant visual design with interactive calendar widgets, streak tracking badges, and one-tap spot reservations.",
+    process: "Created user personas for casual gym-goers vs. athletes, designed quick-booking modal flows, and defined motion design guidelines.",
+    deliverables: ["Full Figma Interactive Prototype", "Motion UI Specifications", "Trainer & Schedule Flow Kit", "Responsive Mobile Views"]
+  },
+  {
+    id: "beauty-ecommerce",
+    title: "Beauty Product Purchasing Website",
+    category: "featured",
+    categoryLabel: "Featured Project",
+    desc: "An elegant, high-conversion e-commerce storefront for beauty & skincare products, featuring curated product grids, shade selectors, ingredients transparency, and quick-checkout funnels.",
+    tags: ["Figma", "E-Commerce UX", "Beauty & Cosmetics", "Product Catalog"],
+    figmaUrl: "https://www.figma.com/design/sQuvi3s9yoGOEu8DZFvW3D/Beauty-Products?t=bqDFZfFJ33o4iP9V-0",
+    metrics: [
+      { number: "4.9★", label: "Customer Experience Rating" },
+      { number: "34%", label: "Checkout Funnel Gain" },
+      { number: "100%", label: "Mobile-First Design" }
+    ],
+    problem: "Online beauty consumers often experience decision fatigue when navigating dense skincare inventories without clear ingredient guides and visual shade finders.",
+    solution: "Crafted a clean, luxurious interface with tactile beauty swatch selectors, customer review carousels, and an instant add-to-bag sticky drawer.",
+    process: "Benchmarked luxury cosmetic e-commerce experiences, structured visual hierarchy around high-res product photography, and tested rapid 2-step checkout flows in Figma.",
+    deliverables: ["Full Figma Interactive Design File", "Product Detail Screen Flows", "Cart & Checkout UI System", "Mobile Responsive Views"]
+  },
+  {
+    id: "mobile-signup",
+    title: "Mobile Sign-Up Screen Design",
+    category: "featured",
+    categoryLabel: "Featured Project",
+    desc: "A sleek, ergonomic mobile authentication and sign-up flow designed during internship at Codsoft, focusing on low user friction, social OAuth integrations, and micro-interactions.",
+    tags: ["Figma", "Mobile UI/UX", "Onboarding Flow", "Authentication"],
+    figmaUrl: "https://www.figma.com/design/bUgJfOME4DCJhtYaWkjhNo/Codsoft-1?t=bqDFZfFJ33o4iP9V-0",
+    metrics: [
+      { number: "95%", label: "Frictionless Flow Score" },
+      { number: "3-Step", label: "Guided Registration" },
+      { number: "<45s", label: "Avg Onboarding Time" }
+    ],
+    problem: "Complex multi-field mobile registration forms cause high drop-off rates and user fatigue during initial app onboarding.",
+    solution: "Architected a progressive, step-by-step mobile sign-up screen with clear visual feedback, social login buttons, inline validation, and accessible password toggles.",
+    process: "Analyzed mobile UX best practices, created ergonomic thumb-zone wireframes, and prototyped smooth micro-transitions for form input states in Figma.",
+    deliverables: ["Figma Mobile UI Kit", "Authentication & Onboarding Flow", "Micro-interaction States", "Interactive Mobile Prototype"]
+  },
+  {
+    id: "coffee-ecommerce",
+    title: "Coffee Purchasing Website",
+    category: "featured",
+    categoryLabel: "Featured Project",
+    desc: "Sensory-driven e-commerce experience for specialty coffee lovers, featuring bean roast flavor profiles, subscription builders, and brewing guides.",
+    tags: ["Figma", "E-Commerce UX", "Specialty Coffee", "Subscription Flow"],
+    figmaUrl: "https://www.figma.com/design/DYW7rclHZUxMPKznecC15G/coffee?t=bqDFZfFJ33o4iP9V-0",
+    metrics: [
+      { number: "38%", label: "Average Order Value Boost" },
+      { number: "4.8★", label: "Checkout Usability Score" },
+      { number: "12+", label: "Flavor Profile Radar Sets" }
+    ],
+    problem: "Online coffee buyers struggle to gauge aroma, acidity, and roast levels through plain thumbnail grids.",
+    solution: "Created an interactive flavor profile selector and customizable recurring subscription box builder with warm, artisanal aesthetics.",
+    process: "Researched sensory e-commerce patterns, designed visual flavor radar cards, and simplified the multi-step checkout funnel in Figma.",
+    deliverables: ["Visual Identity & Moodboard", "Figma E-Commerce Prototype", "Checkout Flow Optimization Wireframes", "Subscription Builder UI"]
+  },
+  {
     id: "hr-dashboard",
     title: "Enterprise HR Analytics Dashboard",
     category: "enterprise",
@@ -72,74 +162,6 @@ const projectsData = [
     solution: "Formulated multi-shot prompt schemas, chain-of-thought instructions, and indexed NotebookLM knowledge graphs with custom source groundings for instant semantic search.",
     process: "Created structured context templates for Gemini, curated domain-specific reference corpora in NotebookLM, and benchmarked output factual accuracy.",
     deliverables: ["Enterprise Prompt Playbook", "NotebookLM Source Architecture", "Evaluation Benchmarks", "Team Training Guides"]
-  },
-  {
-    id: "real-estate-web",
-    title: "PrimeSpaces — Real Estate Platform",
-    category: "personal",
-    categoryLabel: "Personal Project",
-    desc: "A modern property discovery platform featuring neighborhood map filters, 3D tour previews, and interactive mortgage calculations.",
-    tags: ["UI/UX Design", "Figma", "Responsive Web", "Visual Hierarchy"],
-    metrics: [
-      { number: "4.9/5", label: "User Preference Rating" },
-      { number: "8+", label: "Responsive Breakpoints" },
-      { number: "100%", label: "Custom Component Kit" }
-    ],
-    problem: "Real estate websites often overwhelm buyers with disorganized filters, low-resolution media, and clunky calculation forms.",
-    solution: "Engineered a card-based visual discovery UI with dual list/map split view, sticky price calculators, and seamless direct agent booking.",
-    process: "Conducted competitive benchmarking, built modular property card components with micro-interactions, and tested mobile search usability.",
-    deliverables: ["Full Figma Design System", "High-Fidelity Desktop & Mobile Prototypes", "Custom Property Card Micro-Interactions"]
-  },
-  {
-    id: "fitness-gym-web",
-    title: "PulseFit — Gym & Membership Portal",
-    category: "personal",
-    categoryLabel: "Personal Project",
-    desc: "High-energy fitness app and gym membership portal with dynamic workout tracking, trainer scheduling, and community leaderboard interactions.",
-    tags: ["Visual Design", "Gamification UX", "Figma", "Mobile-First"],
-    metrics: [
-      { number: "52%", label: "Booking Conversion Boost" },
-      { number: "15+", label: "Micro-animations" },
-      { number: "Adaptive", label: "Tonal UI Themes" }
-    ],
-    problem: "Gym members found tracking class schedules and coach availability cumbersome on generic booking platforms.",
-    solution: "Crafted a vibrant visual design with interactive calendar widgets, streak tracking badges, and one-tap spot reservations.",
-    process: "Created user personas for casual gym-goers vs. athletes, designed quick-booking modal flows, and defined motion design guidelines.",
-    deliverables: ["Figma Community File", "Motion UI Specifications", "Trainer Dashboard Screen Flow"]
-  },
-  {
-    id: "job-portal-web",
-    title: "TalentGrid — Next-Gen Job Portal",
-    category: "personal",
-    categoryLabel: "Personal Project",
-    desc: "Recruitment platform connecting designers and engineers with tech startups via skill-verified portfolio showcases.",
-    tags: ["Information Architecture", "Figma", "User Research", "Wireframing"],
-    metrics: [
-      { number: "3-Step", label: "Rapid Application Flow" },
-      { number: "89%", label: "Applicant Satisfaction" },
-      { number: "25+", label: "Modular UI Widgets" }
-    ],
-    problem: "Job seekers often face exhausting 10-page application funnels with no transparency on recruiter review status.",
-    solution: "Designed a transparent 'Pipeline Tracker' UI and modular 3-step application flow with instant skill-match score previews.",
-    process: "Mapped applicant friction points, created wireframes for candidate profile builder, and optimized recruiter review interfaces.",
-    deliverables: ["Candidate Journey Mapping", "Recruiter Review Interface", "Design System UI Kit"]
-  },
-  {
-    id: "coffee-ecommerce",
-    title: "Aura Roast — Specialty Coffee Experience",
-    category: "personal",
-    categoryLabel: "Personal Project",
-    desc: "Sensory-driven e-commerce experience for specialty coffee lovers, featuring bean roast flavor profiles, subscription builders, and brewing guides.",
-    tags: ["E-Commerce UX", "Figma", "Color Theory", "Typography"],
-    metrics: [
-      { number: "38%", label: "Average Order Value Boost" },
-      { number: "4.8★", label: "Checkout Usability Score" },
-      { number: "12+", label: "Flavor Profile Radar Sets" }
-    ],
-    problem: "Online coffee buyers struggle to gauge aroma, acidity, and roast levels through plain thumbnail grids.",
-    solution: "Created an interactive 'Flavor Wheel' selector and customizable recurring subscription box builder with warm, artisanal aesthetics.",
-    process: "Researched sensory e-commerce patterns, designed visual flavor radar cards, and simplified the multi-step checkout funnel.",
-    deliverables: ["Visual Identity & Moodboard", "Figma E-Commerce Prototype", "Checkout Flow Optimization Wireframes"]
   }
 ];
 
@@ -249,22 +271,64 @@ function getGlassMockupSVG(id) {
         <rect x="145" y="158" width="80" height="22" rx="11" fill="rgba(200,223,219,0.7)"/>
         <rect x="235" y="158" width="95" height="22" rx="11" fill="rgba(200,223,219,0.7)"/>
       </svg>`,
-    "job-portal-web": `
+    "beauty-ecommerce": `
+      <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="beautyGrad" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#c8dfdb" stop-opacity="0.35"/>
+            <stop offset="1" stop-color="#66a3bf" stop-opacity="0.25"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="220" fill="url(#beautyGrad)"/>
+        <rect x="20" y="20" width="360" height="180" rx="14" fill="rgba(255,255,255,0.8)" stroke="rgba(255,255,255,0.95)" stroke-width="1.5"/>
+        <!-- Skincare Jar -->
+        <rect x="55" y="95" width="80" height="75" rx="16" fill="${deep}"/>
+        <rect x="50" y="80" width="90" height="18" rx="6" fill="${slate}"/>
+        <circle cx="95" cy="130" r="14" fill="${seafoam}"/>
+        <!-- Serum Dropper Bottle -->
+        <rect x="165" y="65" width="50" height="105" rx="12" fill="rgba(200,223,219,0.7)" stroke="${deep}" stroke-width="1.5"/>
+        <rect x="175" y="45" width="30" height="22" rx="4" fill="${deep}"/>
+        <rect x="183" y="32" width="14" height="14" rx="3" fill="${slate}"/>
+        <!-- Product Info Cards on Right -->
+        <rect x="240" y="45" width="125" height="12" rx="4" fill="${deep}"/>
+        <rect x="240" y="65" width="85" height="8" rx="3" fill="${slate}"/>
+        <circle cx="248" cy="92" r="7" fill="#E8A598"/>
+        <circle cx="268" cy="92" r="7" fill="#D98A72"/>
+        <circle cx="288" cy="92" r="7" fill="#B35F48"/>
+        <circle cx="308" cy="92" r="7" fill="#8C3F2B"/>
+        <rect x="240" y="115" width="120" height="35" rx="8" fill="${deep}"/>
+        <text x="255" y="137" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">Add to Bag • $42</text>
+        <rect x="240" y="160" width="100" height="6" rx="3" fill="rgba(200,223,219,0.9)"/>
+      </svg>`,
+    "mobile-signup": `
       <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="400" height="220" fill="rgba(51,104,160,0.15)"/>
         <rect x="20" y="20" width="360" height="180" rx="14" fill="rgba(255,255,255,0.8)" stroke="rgba(255,255,255,0.95)" stroke-width="1.5"/>
-        <rect x="45" y="45" width="140" height="55" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,1)" stroke-width="1"/>
-        <circle cx="70" cy="72" r="12" fill="${deep}"/>
-        <rect x="95" y="64" width="70" height="6" rx="2" fill="${deep}"/>
-        <rect x="95" y="75" width="45" height="4" rx="2" fill="${slate}"/>
-        <rect x="200" y="45" width="140" height="55" rx="8" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,1)" stroke-width="1"/>
-        <circle cx="225" cy="72" r="12" fill="${slate}"/>
-        <rect x="250" y="64" width="70" height="6" rx="2" fill="${deep}"/>
-        <rect x="250" y="75" width="45" height="4" rx="2" fill="${slate}"/>
-        <rect x="45" y="120" width="295" height="50" rx="10" fill="${deep}"/>
-        <text x="65" y="150" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif">96% Skill Compatibility Match</text>
-        <rect x="240" y="132" width="88" height="26" rx="6" fill="${seafoam}"/>
-        <text x="254" y="148" fill="${deep}" font-size="10" font-weight="bold" font-family="sans-serif">Apply Now</text>
+        <!-- Phone Frame in Center -->
+        <rect x="135" y="25" width="130" height="170" rx="16" fill="#ffffff" stroke="${deep}" stroke-width="2"/>
+        <rect x="175" y="30" width="50" height="5" rx="2.5" fill="${deep}"/>
+        <circle cx="160" cy="52" r="10" fill="rgba(200,223,219,0.8)"/>
+        <rect x="178" y="47" width="60" height="6" rx="2" fill="${deep}"/>
+        <rect x="178" y="56" width="40" height="4" rx="2" fill="${slate}"/>
+        <!-- Form Inputs -->
+        <rect x="148" y="70" width="104" height="16" rx="4" fill="rgba(200,223,219,0.4)" stroke="${slate}" stroke-width="1"/>
+        <text x="156" y="82" fill="${slate}" font-size="8" font-family="sans-serif">user@domain.com</text>
+        <rect x="148" y="92" width="104" height="16" rx="4" fill="rgba(200,223,219,0.4)" stroke="${slate}" stroke-width="1"/>
+        <text x="156" y="104" fill="${slate}" font-size="8" font-family="sans-serif">••••••••••</text>
+        <!-- Primary Button -->
+        <rect x="148" y="115" width="104" height="18" rx="6" fill="${deep}"/>
+        <text x="180" y="127" fill="#ffffff" font-size="8" font-weight="bold" font-family="sans-serif">Sign Up</text>
+        <!-- Social Auth -->
+        <circle cx="175" cy="148" r="8" fill="rgba(200,223,219,0.7)"/>
+        <circle cx="200" cy="148" r="8" fill="rgba(200,223,219,0.7)"/>
+        <circle cx="225" cy="148" r="8" fill="rgba(200,223,219,0.7)"/>
+        <!-- Side Accent Cards -->
+        <rect x="40" y="60" width="75" height="95" rx="10" fill="rgba(200,223,219,0.5)" stroke="rgba(255,255,255,0.9)" stroke-width="1"/>
+        <rect x="52" y="75" width="50" height="6" rx="2" fill="${deep}"/>
+        <rect x="52" y="88" width="40" height="4" rx="2" fill="${slate}"/>
+        <rect x="285" y="60" width="75" height="95" rx="10" fill="rgba(200,223,219,0.5)" stroke="rgba(255,255,255,0.9)" stroke-width="1"/>
+        <rect x="297" y="75" width="50" height="6" rx="2" fill="${deep}"/>
+        <rect x="297" y="88" width="40" height="4" rx="2" fill="${slate}"/>
       </svg>`,
     "coffee-ecommerce": `
       <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +344,7 @@ function getGlassMockupSVG(id) {
   return svgs[id] || svgs["hr-dashboard"];
 }
 
-// --- Render Projects with Asian Emblems & Staggered Scroll Reveal ---
+// --- Render Projects Carousel with Asian Emblems & Staggered Scroll Reveal ---
 function renderProjects(filter = "all") {
   const container = document.getElementById("projectsGrid");
   if (!container) return;
@@ -300,6 +364,21 @@ function renderProjects(filter = "all") {
           </span>
           ${p.categoryLabel}
         </span>
+        ${p.figmaUrl ? `
+          <a href="${p.figmaUrl}" target="_blank" rel="noopener noreferrer" class="project-figma-badge" onclick="event.stopPropagation();" title="View Figma File">
+            <svg viewBox="0 0 38 57" width="11" height="16.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+              <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+              <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+              <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+              <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+            </svg>
+            <span>Figma</span>
+            <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+          </a>
+        ` : ''}
         ${getGlassMockupSVG(p.id)}
       </div>
       <div class="project-card-body">
@@ -310,15 +389,43 @@ function renderProjects(filter = "all") {
         </div>
         <div class="project-card-footer">
           <span>Read Full Case Study</span>
-          <span class="asian-icon" style="width:16px;height:16px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </span>
+          ${p.figmaUrl ? `
+            <a href="${p.figmaUrl}" target="_blank" rel="noopener noreferrer" class="figma-link-action" onclick="event.stopPropagation();" title="Open Figma Prototype">
+              <span>Figma ↗</span>
+            </a>
+          ` : `
+            <span class="asian-icon" style="width:16px;height:16px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          `}
         </div>
       </div>
     </article>
   `).join('');
+
+  // Setup Pagination Dots
+  const dotsContainer = document.getElementById("carouselDots");
+  if (dotsContainer) {
+    dotsContainer.innerHTML = filtered.map((_, i) => `
+      <button class="carousel-dot ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="Go to project ${i + 1}"></button>
+    `).join('');
+
+    dotsContainer.querySelectorAll(".carousel-dot").forEach(dot => {
+      dot.addEventListener("click", () => {
+        const idx = parseInt(dot.getAttribute("data-index"), 10);
+        scrollCarouselToIndex(idx);
+      });
+    });
+  }
+
+  // Reset scroll & update counters
+  container.scrollLeft = 0;
+  updateCarouselState(0, filtered.length);
+
+  // Setup Scroll & Touch Listeners on track
+  setupCarouselScrollListener(filtered.length);
 
   if (window.lucide) {
     lucide.createIcons();
@@ -341,6 +448,83 @@ function renderProjects(filter = "all") {
   });
 }
 
+function getCardStepWidth() {
+  const container = document.getElementById("projectsGrid");
+  if (!container) return 340;
+  const firstCard = container.querySelector(".glass-project-card");
+  if (!firstCard) return 340;
+  const gap = 24; // 1.5rem
+  return firstCard.offsetWidth + gap;
+}
+
+function scrollCarouselToIndex(index) {
+  const container = document.getElementById("projectsGrid");
+  if (!container) return;
+  const step = getCardStepWidth();
+  container.scrollTo({
+    left: index * step,
+    behavior: "smooth"
+  });
+}
+
+function updateCarouselState(activeIndex, totalCount) {
+  const counter = document.getElementById("carouselCounter");
+  if (counter) {
+    const currentFormatted = String(Math.min(activeIndex + 1, totalCount)).padStart(2, "0");
+    const totalFormatted = String(totalCount).padStart(2, "0");
+    counter.textContent = `${currentFormatted} / ${totalFormatted}`;
+  }
+
+  // Update dots
+  const dots = document.querySelectorAll(".carousel-dot");
+  dots.forEach((d, i) => {
+    d.classList.toggle("active", i === activeIndex);
+  });
+
+  // Update nav buttons
+  const prevBtn = document.getElementById("prevProjectBtn");
+  const nextBtn = document.getElementById("nextProjectBtn");
+  if (prevBtn) prevBtn.disabled = activeIndex <= 0;
+  if (nextBtn) nextBtn.disabled = activeIndex >= totalCount - 1;
+}
+
+function setupCarouselScrollListener(totalCount) {
+  const container = document.getElementById("projectsGrid");
+  if (!container) return;
+
+  let scrollTimeout;
+  container.onscroll = () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      const step = getCardStepWidth();
+      const activeIdx = Math.round(container.scrollLeft / step);
+      updateCarouselState(Math.max(0, Math.min(activeIdx, totalCount - 1)), totalCount);
+    }, 50);
+  };
+}
+
+function initProjectCarouselControls() {
+  const prevBtn = document.getElementById("prevProjectBtn");
+  const nextBtn = document.getElementById("nextProjectBtn");
+  const container = document.getElementById("projectsGrid");
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      if (!container) return;
+      const step = getCardStepWidth();
+      container.scrollBy({ left: -step, behavior: "smooth" });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      if (!container) return;
+      const step = getCardStepWidth();
+      container.scrollBy({ left: step, behavior: "smooth" });
+    });
+  }
+}
+
 // --- Case Study Modal ---
 function openProjectModal(id) {
   const project = projectsData.find(p => p.id === id);
@@ -350,68 +534,146 @@ function openProjectModal(id) {
   if (!modalBody) return;
 
   modalBody.innerHTML = `
-    <div style="margin-bottom:1.5rem;">
-      <span class="badge-glass" style="margin-bottom:0.75rem; color:var(--c-deep-blue); font-family:var(--font-heading);">
-        <span class="asian-icon" style="width:13px;height:13px;margin-right:0.35rem;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-        </span>
-        ${project.categoryLabel}
-      </span>
-      <h2 style="font-size:clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom:0.75rem; font-family:var(--font-heading);">${project.title}</h2>
-      <p style="font-size:1.02rem; color:var(--text-body); line-height:1.72;">${project.desc}</p>
-    </div>
-
-    <!-- Metrics Row -->
-    <div style="margin-bottom:2rem;">
-      <h4 style="font-size:0.92rem; text-transform:uppercase; letter-spacing:0.08em; font-family:var(--font-heading); color:var(--c-deep-blue); margin-bottom:0.75rem;">Key Results & Impact</h4>
-      <div class="metrics-glass-row">
-        ${project.metrics.map(m => `
-          <div class="metric-card-glass">
-            <div style="font-size:1.6rem; font-weight:800; font-family:var(--font-heading); color:var(--c-deep-blue);">${m.number}</div>
-            <div style="font-size:0.78rem; font-weight:600; color:var(--text-muted); font-family:var(--font-heading);">${m.label}</div>
+    <div class="modal-content-wrapper">
+      <!-- Modal Top Bar -->
+      <div class="modal-top-bar">
+        <div class="modal-top-left">
+          <span class="modal-badge-category">
+            <svg class="modal-icon-star" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            ${project.categoryLabel || "Featured Project"}
+          </span>
+          <div class="modal-tags-inline">
+            ${(project.tags || []).slice(0, 3).map(t => `<span class="modal-tag-chip">${t}</span>`).join('')}
           </div>
-        `).join('')}
+        </div>
+
+        <div class="modal-top-actions">
+          ${project.figmaUrl ? `
+            <a href="${project.figmaUrl}" target="_blank" rel="noopener noreferrer" class="modal-btn-figma" title="Inspect Figma Source File">
+              <svg viewBox="0 0 38 57" width="11" height="16.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+              </svg>
+              <span>Figma Canvas</span>
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          ` : ''}
+          <button class="modal-close-pill" onclick="closeModal()" aria-label="Close modal" title="Close (Esc)">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <!-- Problem & Solution Grid -->
-    <div style="display:grid; grid-template-columns:1fr; gap:1.25rem; margin-bottom:2rem;">
-      <div class="ds-panel-glass">
-        <h4 style="font-size:1.1rem; margin-bottom:0.5rem; color:var(--text-main); font-family:var(--font-heading);">The Challenge</h4>
-        <p style="font-size:0.95rem; color:var(--text-body); line-height:1.68;">${project.problem}</p>
+      <!-- Hero Header -->
+      <div class="modal-hero-section">
+        <h2 class="modal-title">${project.title}</h2>
+        <p class="modal-summary">${project.desc}</p>
       </div>
 
-      <div class="ds-panel-glass">
-        <h4 style="font-size:1.1rem; margin-bottom:0.5rem; color:var(--c-deep-blue); font-family:var(--font-heading);">The Solution</h4>
-        <p style="font-size:0.95rem; color:var(--text-body); line-height:1.68;">${project.solution}</p>
+      <!-- Key Results & Impact Grid -->
+      <div class="modal-section">
+        <div class="modal-section-header">
+          <span class="modal-section-label">Key Results & Impact</span>
+          <div class="modal-section-line"></div>
+        </div>
+        <div class="modal-metrics-grid">
+          ${(project.metrics || []).map(m => `
+            <div class="modal-metric-card">
+              <div class="modal-metric-number">${m.number}</div>
+              <div class="modal-metric-label">${m.label}</div>
+            </div>
+          `).join('')}
+        </div>
       </div>
-    </div>
 
-    <!-- Process -->
-    <div style="margin-bottom:2rem;">
-      <h4 style="font-size:1.1rem; margin-bottom:0.5rem; font-family:var(--font-heading);">Design & Research Methodology</h4>
-      <p style="font-size:0.95rem; color:var(--text-body); line-height:1.68;">${project.process}</p>
-    </div>
+      <!-- Problem & Solution Comparison Grid -->
+      <div class="modal-section">
+        <div class="modal-dual-grid">
+          <div class="modal-card-challenge">
+            <div class="modal-card-badge challenge">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>The Challenge</span>
+            </div>
+            <p class="modal-card-text">${project.problem}</p>
+          </div>
 
-    <!-- Deliverables -->
-    <div style="margin-bottom:2rem;">
-      <h4 style="font-size:0.92rem; text-transform:uppercase; letter-spacing:0.08em; font-family:var(--font-heading); color:var(--c-deep-blue); margin-bottom:0.75rem;">Core Deliverables</h4>
-      <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
-        ${project.deliverables.map(d => `<span class="badge-glass" style="background:var(--glass-surface-subtle);">${d}</span>`).join('')}
+          <div class="modal-card-solution">
+            <div class="modal-card-badge solution">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>The Solution</span>
+            </div>
+            <p class="modal-card-text">${project.solution}</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div style="display:flex; justify-content:flex-end; gap:0.75rem; padding-top:1rem; border-top:1px solid var(--glass-border-subtle);">
-      <button class="btn btn-glass btn-sm" onclick="closeModal()">Close</button>
-      <a href="#contact" class="btn btn-primary btn-sm" onclick="closeModal()">Discuss Project</a>
+      <!-- Methodology & Research Process -->
+      <div class="modal-section">
+        <div class="modal-section-header">
+          <span class="modal-section-label">Design & Research Methodology</span>
+          <div class="modal-section-line"></div>
+        </div>
+        <div class="modal-process-box">
+          <div class="modal-process-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <p class="modal-process-text">${project.process}</p>
+        </div>
+      </div>
+
+      <!-- Deliverables -->
+      <div class="modal-section">
+        <div class="modal-section-header">
+          <span class="modal-section-label">Core Deliverables & Outputs</span>
+          <div class="modal-section-line"></div>
+        </div>
+        <div class="modal-deliverables-grid">
+          ${(project.deliverables || []).map(d => `
+            <div class="modal-deliverable-item">
+              <svg class="modal-deliverable-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>${d}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Modal Footer Bar -->
+      <div class="modal-footer-bar">
+        <button class="btn btn-glass btn-sm" onclick="closeModal()">Dismiss</button>
+        <div class="modal-footer-right">
+          ${project.figmaUrl ? `
+            <a href="${project.figmaUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-figma-footer" style="gap:0.45rem;">
+              <svg viewBox="0 0 38 57" width="11" height="16.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+              </svg>
+              <span>Inspect in Figma</span>
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          ` : ''}
+          <a href="#contact" class="btn btn-primary btn-sm" onclick="closeModal()">Discuss Project</a>
+        </div>
+      </div>
     </div>
   `;
 
   const modal = document.getElementById("projectModal");
-  modal.classList.add("active");
-  document.body.style.overflow = "hidden";
+  if (modal) {
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
 
   if (window.lucide) {
     lucide.createIcons();
@@ -422,6 +684,7 @@ function closeModal() {
   const modal = document.getElementById("projectModal");
   if (!modal) return;
   modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
 }
 
@@ -448,13 +711,13 @@ function setTheme(nextTheme) {
 }
 
 function toggleTheme() {
-  const current = document.documentElement.getAttribute("data-theme") || "light";
+  const current = document.documentElement.getAttribute("data-theme") || "dark";
   const next = current === "dark" ? "light" : "dark";
   setTheme(next);
 }
 
 function initTheme() {
-  const savedTheme = localStorage.getItem("aishika_theme") || "light";
+  const savedTheme = localStorage.getItem("aishika_theme") || "dark";
   setTheme(savedTheme);
 
   // 1. Navbar Theme Toggle Button
@@ -654,6 +917,25 @@ function copyContactInfo(text, msg = "Copied to clipboard!") {
   });
 }
 
+function openGmailCompose() {
+  const to = "aishikadas31@gmail.com";
+  const subject = "UI/UX Design Opportunity - Aishika Das";
+  const body = "Hi Aishika,\n\nI came across your design portfolio and would love to discuss an opportunity or project with you.\n\nDetails:\n- Company / Organization: \n- Project Scope / Role: \n- Timeline: \n\nLooking forward to connecting!\n\nBest regards,\n[Your Name]";
+  
+  const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const url = `https://mail.google.com/mail/?extsrc=mailto&url=${encodeURIComponent(mailtoUrl)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function openOutlookCompose() {
+  const to = "aishikadas31@gmail.com";
+  const subject = "UI/UX Design Opportunity - Aishika Das";
+  const body = "Hi Aishika,\n\nI came across your design portfolio and would love to discuss an opportunity or project with you.\n\nDetails:\n- Company / Organization: \n- Project Scope / Role: \n- Timeline: \n\nLooking forward to connecting!\n\nBest regards,\n[Your Name]";
+  
+  const url = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(to)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
 function showToast(message) {
   const existing = document.querySelector(".toast-glass");
   if (existing) existing.remove();
@@ -671,10 +953,16 @@ function showToast(message) {
   }, 2400);
 }
 
-// --- Click outside modal to close ---
+// --- Click outside modal to close & Escape key support ---
 window.addEventListener("click", (e) => {
   const modal = document.getElementById("projectModal");
   if (e.target === modal) {
+    closeModal();
+  }
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
     closeModal();
   }
 });
@@ -1443,6 +1731,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initFilterTabs();
   renderProjects("all");
+  initProjectCarouselControls();
   initScrollReveal();
   initLanternSilkFireflies();
   initRoamingFireflies();
