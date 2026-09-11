@@ -113,23 +113,6 @@ const projectsData = [
     deliverables: ["Atomic Design System Library", "Interactive Figma Prototype", "Responsive Desktop & Tablet Layouts", "WCAG 2.2 AA Accessibility Spec"]
   },
   {
-    id: "clinic-healthcare",
-    title: "Clinic & Healthcare Portal Interface",
-    category: "enterprise",
-    categoryLabel: "Healthcare Tech",
-    desc: "Patient-doctor scheduling, electronic health records (EHR), and telemetry tracking interface designed for quick clinical decision-making and low cognitive fatigue.",
-    tags: ["Healthcare UX", "Information Architecture", "Figma", "User Flows"],
-    metrics: [
-      { number: "65%", label: "Faster Triage Onboarding" },
-      { number: "0.2s", label: "Clinical Lookup Time" },
-      { number: "98%", label: "Practitioner Usability" }
-    ],
-    problem: "Doctors and clinic desk staff were overwhelmed by cluttered legacy medical software with confusing navigation, leading to delayed triage.",
-    solution: "Restructured the core information architecture into three streamlined workflows: Quick Triage, Patient Timeline, and Diagnostic Records with prominent emergency callouts.",
-    process: "Analyzed clinical touchpoints in high-stress emergency settings, designed modular vital cards with high-contrast color tokens, and validated layouts through task-based usability testing.",
-    deliverables: ["Clinical User Journey Maps", "High-Contrast EHR Views", "Interactive ProtoPie Prototype", "Design Handoff Specifications"]
-  },
-  {
     id: "wf-to-df",
     title: "Workflow to Data Flow (WF → DF) Transformation",
     category: "enterprise",
@@ -204,23 +187,6 @@ function getGlassMockupSVG(id) {
         <path d="M110 170 L150 148 L195 158 L240 135 L290 148 L345 130" stroke="${deep}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="240" cy="135" r="5" fill="${slate}" stroke="#ffffff" stroke-width="2"/>
         <circle cx="345" cy="130" r="5" fill="${deep}" stroke="#ffffff" stroke-width="2"/>
-      </svg>`,
-    "clinic-healthcare": `
-      <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="220" fill="rgba(200,223,219,0.25)"/>
-        <rect x="20" y="20" width="360" height="180" rx="14" fill="rgba(255,255,255,0.8)" stroke="rgba(255,255,255,0.95)" stroke-width="1.5"/>
-        <rect x="35" y="35" width="38" height="38" rx="10" fill="rgba(200,223,219,0.7)" stroke="rgba(255,255,255,1)" stroke-width="1"/>
-        <path d="M54 43 V65 M43 54 H65" stroke="${deep}" stroke-width="3" stroke-linecap="round"/>
-        <rect x="85" y="42" width="130" height="10" rx="5" fill="${deep}"/>
-        <rect x="85" y="58" width="90" height="6" rx="3" fill="${slate}"/>
-        <rect x="35" y="82" width="330" height="50" rx="10" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,1)" stroke-width="1"/>
-        <path d="M45 107 H110 L120 92 L130 120 L140 98 L150 107 H230 L240 90 L250 122 L260 100 L270 107 H355" stroke="${deep}" stroke-width="2.5" stroke-linecap="round"/>
-        <rect x="35" y="142" width="102" height="46" rx="8" fill="rgba(200,223,219,0.5)" stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
-        <rect x="45" y="152" width="60" height="8" rx="2" fill="${deep}"/>
-        <rect x="148" y="142" width="102" height="46" rx="8" fill="rgba(200,223,219,0.5)" stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
-        <rect x="158" y="152" width="60" height="8" rx="2" fill="${deep}"/>
-        <rect x="261" y="142" width="104" height="46" rx="8" fill="rgba(51,104,160,0.15)" stroke="rgba(51,104,160,0.4)" stroke-width="1"/>
-        <rect x="271" y="152" width="60" height="8" rx="2" fill="${deep}"/>
       </svg>`,
     "wf-to-df": `
       <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -950,14 +916,23 @@ function showToast(message) {
 
   const toast = document.createElement("div");
   toast.className = "toast-glass";
-  toast.innerHTML = `<span style="display:flex;align-items:center;gap:0.5rem;"><span class="asian-icon" style="color:var(--c-deep-blue);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="9 12 11 14 15 10"/></svg></span> ${message}</span>`;
+  toast.setAttribute("role", "status");
+  toast.setAttribute("aria-live", "polite");
+  toast.innerHTML = `
+    <span class="toast-icon-wrap" style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;min-width:22px;border-radius:50%;background:rgba(46,229,157,0.22);border:1px solid rgba(46,229,157,0.55);color:#2ee59d;flex-shrink:0;">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#2ee59d" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:13px;height:13px;">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </span>
+    <span class="toast-msg" style="color:#ffffff;font-size:0.88rem;font-weight:400;letter-spacing:0.02em;">${message}</span>
+  `;
   document.body.appendChild(toast);
 
   setTimeout(() => {
-    toast.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+    toast.style.transition = "opacity 0.35s ease, transform 0.35s ease";
     toast.style.opacity = "0";
-    toast.style.transform = "translateY(10px)";
-    setTimeout(() => toast.remove(), 400);
+    toast.style.transform = "translateY(8px) scale(0.95)";
+    setTimeout(() => toast.remove(), 350);
   }, 2400);
 }
 

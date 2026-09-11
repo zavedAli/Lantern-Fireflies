@@ -1,6 +1,6 @@
 # Aishika Das - Personal Portfolio Website
 
-A portfolio website for **Aishika Das** — UI/UX Designer, Prompt Engineer, and AI-Assisted Product Designer. Engineered with modern semantic HTML5, high-performance vanilla CSS design tokens, interactive micro-interactions, dark/light theme toggle, and an interactive **AI & Prompt Engineering Workbench**.
+A portfolio website for **Aishika Das** — UI/UX Designer and Prompt Engineer. Engineered with modern semantic HTML5, high-performance vanilla CSS design tokens, interactive micro-interactions, dark/light theme toggle, and an interactive case study presentation.
 
 ![Deploy with Vercel](https://vercel.com/button)
 
@@ -9,18 +9,19 @@ A portfolio website for **Aishika Das** — UI/UX Designer, Prompt Engineer, and
 ## ✨ Key Highlights & Features
 
 - **Hero & Identity Section:** High-impact typography, status badge, live contact chips with 1-click clipboard copy, and responsive navigation.
+- **About Section:** Philosophy, human-centered clarity, design system precision, and prompt engineering integration.
 - **Experience Timeline:** Detailed breakdown of work at:
-  - **Habot Connect DMCC** (Enterprise HR Dashboards, Healthcare UI, Prompt Engineering, WF to DF Transformation).
+  - **Habot Connect DMCC** (Enterprise HR Dashboards, Prompt Engineering, WF to DF Transformation).
   - **Codsoft** (Mobile App UI, Frictionless Sign-Up & Onboarding Design, Interactive Prototyping).
   - **Webskitters Technology Solutions** (Responsive Web & E-Commerce Platforms, Design Systems & Component Libraries).
 - **Filterable Project Showcase & Modal Case Studies:**
   - *Featured & Figma Projects:* Real Estate Website, Gym Website, Beauty Product Purchasing Website, Mobile Sign-Up Screen Design, Coffee Purchasing Website (each with direct Figma canvas links).
-  - *Enterprise SaaS & Healthcare:* HR Dashboard, Clinic & Healthcare Portal, Workflow to Data Flow Transformation, AI Prompt Engineering & NotebookLM.
+  - *Enterprise SaaS & Systems:* HR Dashboard, Workflow to Data Flow Transformation, AI Prompt Engineering & NotebookLM.
   - *Case Study Modals:* Deep dive into problem statements, design strategies, measurable metrics, deliverables, and live Figma files.
-- **Skills Matrix:** Visually categorized into UI/UX Design, AI & Prompt Engineering, Tools & Prototyping, Design Principles (Material Design 3), and Languages.
+- **Skills Matrix:** Visually categorized into UI/UX Design, AI & Prompt Engineering, Tools & Ecosystem, and Design Systems Standards (Material Design 3).
 - **Qualifications:** Google UX Design Professional Certificate badge (Coursera) and Calcutta University degree details.
 - **Direct Contact Hub:** Quick-action buttons for email, phone/WhatsApp, LinkedIn, and print/save-as-PDF.
-- **Dark/Light Theme:** Cheongsachorong lantern interactive theme switcher with persistent local storage state.
+- **Dark/Light Theme:** Cheongsachorong lantern interactive theme switcher with persistent session storage state.
 
 ---
 
